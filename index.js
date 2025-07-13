@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;
 const path = require('path');
 const URL = require('./models/url');
 const urlRoute = require('./routes/url');
